@@ -1,0 +1,33 @@
+.footer {
+  height: 10rem;
+  width: 100%;
+  background-color: pink;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: cornflowerblue solid 0.3rem;
+  }
+  &__btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0 auto;
+  }
+
+  &__contact {
+    padding-top: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    margin-bottom: 0;
+    &__btn {
+      width: 6.5rem;
+      height: 6.5rem;
+      margin: 0 auto;
+      transform: translateY(-80%);
+    }
+  }
+}
